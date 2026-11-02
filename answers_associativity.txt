@@ -1,0 +1,18 @@
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 171393
+compteur_vrai: 828607
+pourcentage de vrai: 82.860700

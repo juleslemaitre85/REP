@@ -23,9 +23,11 @@ void main() {
             compteur_faux += 1;
         }
     }
+    FILE *file = fopen("answers_associativity.txt","a");
     double pourcentage;
     pourcentage = (double)compteur_vrai/n*100;
-    printf("compteur_faux: %d \n", compteur_faux);
-    printf("compteur_vrai: %d \n", compteur_vrai);
-    printf("pourcentage de vrai: %lf \n", pourcentage );
+    fprintf(file,"compteur_faux: %d \n", compteur_faux);
+    fprintf(file,"compteur_vrai: %d \n", compteur_vrai);
+    fprintf(file,"pourcentage de vrai: %lf \n", pourcentage );
+    fclose(file);
 }

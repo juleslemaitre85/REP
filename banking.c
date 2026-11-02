@@ -14,7 +14,12 @@ void main() {
     for ( i = 1; i < n+1; i++) {
         compte = (compte-1)*i;
     }
-    //double pourc = compteur_vrai/n*100;
-    printf("Au bout de %d années, il y a %lf sur le compte\n",n,compte);
+    FILE *file = fopen("answers_banking.txt","a");
+    if (file == NULL) {
+        perror("Erreur lors de l'ouverture du fichier");
+        return;
+    }
+    fprintf(file,"Au bout de %d années, il y a %lf sur le compte\n",n,compte);
+    fclose(file);
 }
 
