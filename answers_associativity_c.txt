@@ -1,0 +1,30 @@
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 760915 
+compteur_vrai: 9239085 
+pourcentage de vrai: 92.390850 
+compteur_faux: 171393
+compteur_vrai: 828607
+pourcentage de vrai: 82.860700
+compteur_faux: 5 
+compteur_vrai: 95 
+pourcentage de vrai: 95.000000 
+compteur_faux: 77 
+compteur_vrai: 923 
+pourcentage de vrai: 92.300000 
+compteur_faux: 777 
+compteur_vrai: 9223 
+pourcentage de vrai: 92.230000 
+compteur_faux: 75946 
+compteur_vrai: 924054 
+pourcentage de vrai: 92.405400 

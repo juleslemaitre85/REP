@@ -1,0 +1,21 @@
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000

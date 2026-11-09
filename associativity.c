@@ -7,8 +7,8 @@ double rand_double(double min, double max) {
     return min + scale * (max - min);                 // Mise à l'échelle
 }
 
-void main() {
-    int n = 10000000;
+void fonction(int number) {
+    int n = number;
     int compteur_vrai = 0;
     int compteur_faux = 0;
     double x, y, z;
@@ -30,4 +30,11 @@ void main() {
     fprintf(file,"compteur_vrai: %d \n", compteur_vrai);
     fprintf(file,"pourcentage de vrai: %lf \n", pourcentage );
     fclose(file);
+}
+
+void main() {
+    fonction(100);
+    fonction(1000);
+    fonction(10000);
+    fonction(1000000);
 }
