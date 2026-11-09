@@ -1,0 +1,37 @@
+name: Compare mathematical properties
+
+on:
+  push:
+    branches:
+      - distributivity
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile programs
+        run: |
+          gcc associativity.c -o associativity -lm
+          gcc distributivity.c -o distributivity -lm
+
+      - name: Execute programs
+        run: |
+          ./associativity
+          ./distributivity
+
+      - name: Compare results
+        run: |
+          if cmp -s answers_associativity.txt answers_distributivity.txt; then
+            echo "ERROR: Results are identical"
+            exit 1
+          else
+            echo "SUCCESS: Results are different"
+            diff -u answers_associativity.txt answers_distributivity.txt || true
+          fi
