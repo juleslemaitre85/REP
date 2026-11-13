@@ -1,0 +1,31 @@
+name: Compiler variability
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+
+    strategy:
+      matrix:
+        gcc-version: [12, 13, 14]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install GCC
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-${{ matrix.gcc-version }}
+
+      - name: Compile
+        run: |
+          gcc-${{ matrix.gcc-version }} \
+            associativity.c \
+            -o associativity
+
+      - name: Run
+        run: ./associativity

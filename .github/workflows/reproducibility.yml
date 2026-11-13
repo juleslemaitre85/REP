@@ -1,0 +1,45 @@
+name: Reproducibility
+
+on:
+  push:
+    branches:
+      - main
+      - distributivity
+  pull_request:
+    branches:
+      - main
+      - distributivity
+  workflow_dispatch:
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t rep-tp2 .
+
+      - name: Run experiments
+        run: docker run --name rep-container rep-tp2
+
+      - name: Retrieve results
+        if: always()
+        run: |
+          docker cp rep-container:/app/answers_associativity.txt . || true
+          docker cp rep-container:/app/answers_banking.txt . || true
+          docker cp rep-container:/app/answers_distributivity.txt . || true
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: experimental-results
+          path: answers_*.txt
+          if-no-files-found: warn
+
+      - name: Cleanup
+        if: always()
+        run: docker rm -f rep-container || true

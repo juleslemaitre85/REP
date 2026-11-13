@@ -32,9 +32,10 @@ void fonction(int number) {
     fclose(file);
 }
 
-void main() {
+int main() {
     fonction(100);
     fonction(1000);
     fonction(10000);
     fonction(1000000);
+    return 0;
 }
