@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Fonction pour générer un double entre min et max */
+// Fonction pour générer un double entre min et max */
 double rand_double(double min, double max) {
-    double scale = (double)rand() / (double)RAND_MAX; /* Entre 0.0 et 1.0 */
-    return min + scale * (max - min);                 /* Mise à l'échelle*/
+    double scale = (double)rand() / (double)RAND_MAX; // Entre 0.0 et 1.0 */
+    return min + scale * (max - min);                 // Mise à l'échelle*/
 }
 
 void fonction(int number) {
