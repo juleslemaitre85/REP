@@ -1,0 +1,12 @@
+seed: 2963826475
+repetitions: 1000000
+compteur_faux: 171961
+compteur_vrai: 828039
+pourcentage de vrai: 82.803900
+
+seed: 2098462968
+repetitions: 10000
+compteur_faux: 1717
+compteur_vrai: 8283
+pourcentage de vrai: 82.830000
+

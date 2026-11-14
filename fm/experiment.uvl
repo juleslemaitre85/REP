@@ -1,0 +1,37 @@
+// The classic UVL sandwich — edit me!
+features
+    Experiment
+        mandatory
+            Program
+                alternative
+                    OriginalC
+                    LLMC
+                    LLMPython
+
+            Property
+                alternative
+                    AddAssociativity
+                    MulAssociativity
+                    Distributivity
+
+            NumericType
+                alternative
+                    Float
+                    Double
+
+            Repetitions
+                alternative
+                    R100
+                    R1000
+                    R10000
+
+            Environment
+                alternative
+                    GCC12
+                    GCC13
+                    GCC14
+                    Python311
+
+constraints
+    LLMPython => Python311
+    (OriginalC | LLMC) => (GCC12 | GCC13 | GCC14)

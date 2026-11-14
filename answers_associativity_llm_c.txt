@@ -19,3 +19,21 @@ pourcentage de vrai: 100.000000
 compteur_faux: 0
 compteur_vrai: 10000
 pourcentage de vrai: 100.000000
+repetitions: 10000
+seed: 1794609475
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000
+
+repetitions: 1000
+seed: 1794609389
+compteur_faux: 0
+compteur_vrai: 1000
+pourcentage de vrai: 100.000000
+
+repetitions: 10000
+seed: 1794613179
+compteur_faux: 0
+compteur_vrai: 10000
+pourcentage de vrai: 100.000000
+
