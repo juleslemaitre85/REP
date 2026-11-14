@@ -13,6 +13,12 @@ The experiments can be reproduced by running the following programs:
 | `egal.c` | Associativity | Checks whether `(x + y) + z = x + (y + z)`. |
 | `banking.c` | Banking problem | Simulates the banking investment problem. |
 
+
+
+---
+
+# Lab 2 — Reproducibility with git, Docker and GitHub Actions
+
 The results are written to the following files:
 
 - `answers_associativity.txt`
@@ -20,25 +26,6 @@ The results are written to the following files:
 
 Previous results are already stored in these files.
 
----
-
-# Lab 2 — [To be completed]
-
----
-
-# Lab 3 — Studying Variability and Reproducibility
-
-## 1. Identifying Variability Factors
-
-Several factors can influence the results of an experiment:
-
-- **Programming language:** different languages may handle numerical operations differently.
-- **Number of repetitions:** changing the number of iterations can affect the results.
-- **Computing environment:** the operating system and execution environment may influence the outcome.
-- **Program implementation:** different implementations of the same experiment may produce different results.
-- **Compilation settings:** compiler options and optimizations can affect numerical computations.
-
-## 2. AI-Generated Programs
 
 Two programs were generated using Claude AI:
 
@@ -104,6 +91,27 @@ The results differ significantly:
 - AI-generated implementation: approximately **82%** correct results.
 
 This difference may be explained by the choice of random values and the numerical operations performed. Floating-point arithmetic is sensitive to rounding errors, which can affect the equality comparison.
+
+
+We then create a Dockerfile to help reproduce the experiment.
+
+---
+
+# Lab 3 — Studying Variability and Reproducibility
+
+## 1. Identifying Variability Factors
+
+Several factors can influence the results of an experiment:
+
+- **Programming language:** different languages may handle numerical operations differently.
+- **Number of repetitions:** changing the number of iterations can affect the results.
+- **Computing environment:** the operating system and execution environment may influence the outcome.
+- **Program implementation:** different implementations of the same experiment may produce different results.
+- **Compilation settings:** compiler options and optimizations can affect numerical computations.
+
+## 2. AI-Generated Programs
+
+We compare the different results that we obtained with our code and the ai's, and observe that they are differences, that may have several causes.
 
 The following table summarizes the main implementation differences:
 
